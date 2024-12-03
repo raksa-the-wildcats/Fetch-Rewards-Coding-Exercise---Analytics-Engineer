@@ -37,7 +37,7 @@ FROM
 JOIN 
     Users u ON r.userId = u.id
 JOIN 
-    Brands b ON r.userId = b.id  -- Adjust this join condition as necessary
+    Brands b ON r.userId = b.id  
 WHERE 
     u.createdDate >= CURRENT_DATE - INTERVAL '6 months'
 GROUP BY 
