@@ -17,7 +17,7 @@ SELECT
 FROM 
     Receipts r
 JOIN 
-    Brands b ON r.userId = b.id  -- Adjust this join condition as necessary
+    Brands b ON r.userId = b.id 
 WHERE 
     r.dateScanned >= date_trunc('month', CURRENT_DATE)  -- Filters for the current month
 GROUP BY 
